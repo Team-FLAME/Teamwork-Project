@@ -1,0 +1,123 @@
+
+#wrapper{
+    width: 100%;
+    position: fixed;
+    height: 50px;
+    left: 0;
+    text: 0;
+    top:0;
+    background-color: #FFA627;
+    border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+    text-align: center;
+    z-index: 100;
+}
+
+#wrapper>a>img{
+    display: inline-block;
+    width: 59px;
+}
+#wrapper>nav{
+    display: inline-block;
+    vertical-align: top;
+}
+#logo{
+    text-align: left;
+}
+
+#menu {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    margin-top: 6px;
+}
+
+#menu>li {
+    display: inline-block;
+    font-size: 24px;
+    border-radius: 6px;
+    margin-top: 0px;
+}
+#menu > li > a {
+    display: inline-block;
+    padding: 5px 15px;
+    color: #000;
+    text-decoration: none;
+}
+
+#menu > li:hover {
+    background-color: rgba(0,156,240, 0.7);
+    font-size: 27px;
+    -webkit-transition: background-color 0.3s ease;
+    -moz-transition: background-color 0.3s ease;
+    -o-transition: background-color 0.3s ease;
+    -ms-transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease;
+}
+
+#background>img{
+    background-position: center top;
+    background-repeat: no-repeat;
+    max-width: 100%;
+    position: static;
+}
+
+footer{
+    width: 100%;
+    position: fixed;
+    height: 40px;
+    background-color: #FFA627;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+    text-align: left;
+    bottom:0;
+    left:0;
+    right:0;
+    z-index:99;
+}
+
+#icons{
+    margin-top: 5px;
+    float: right;
+    margin-right: 50px;
+    display: inline-block;
+}
+
+#icons>li{
+    display: inline-block;
+}
+
+#icons>li>a{
+    text-decoration: none;
+}
+
+#icons>li>a>img:hover{
+    opacity: 0.6;
+}
+
+#validation{
+    margin-top: 12px;
+    float: left;
+    margin-left: 10px;
+    display: inline-block;
+}
+
+#validation>li{
+    display: inline-block;
+}
+
+#validation>li>a{
+    text-decoration: none;
+}
+
+.Container {
+    width: 100%;
+    position: relative;
+}
+
+#FirstPage>img{
+    background-position: center top;
+    background-repeat: no-repeat;
+    max-width: 100%;
+    position: static;
+}
