@@ -1,0 +1,38 @@
+﻿body{
+	background-color:#000;
+	width:800px;
+}
+#iframe{
+	display:inline-block;
+	border:1px solid purple;
+}
+#links{
+	display:inline-block;
+	
+	
+}
+ul li a{
+	text-decoration:none;
+   font-size:2rem;
+   color:white;
+
+}
+ul li{
+   text-decoration:none;
+   font-size:3rem;
+   color:white;
+   
+}
+ul li:visited{
+	text-decoration:none;
+   font-size:3rem;
+   color:white;
+
+}
+h1{
+	color:yellow;
+	font-size:3rem;
+	text-align:center;
+}
+ul{
+	list-style-type:none;
