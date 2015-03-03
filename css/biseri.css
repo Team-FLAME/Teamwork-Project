@@ -5,6 +5,11 @@ main {
     border: 1px solid #F2F2F2;
     border-radius: 10px;
     padding: 20px;
+	background-color:cornflowerblue;
+}
+p{
+	font-size:1.2em
+	color:
 }
 main > header > h1 {
     margin: 0;
@@ -17,4 +22,8 @@ img{
 }
 h3{
 padding-top:10px;
+color:yellow;
+}
+h2{
+color:cyan;
 }
