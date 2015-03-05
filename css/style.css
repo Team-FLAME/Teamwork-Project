@@ -1,11 +1,12 @@
+* {
+    margin: 0;
+    padding: 0;
+}
 
 #wrapper{
     width: 100%;
     position: fixed;
-    height: 50px;
-    left: 0;
-    text: 0;
-    top:0;
+    height: 43px;
     background-color: #FFA627;
     border-bottom-left-radius: 7px;
     border-bottom-right-radius: 7px;
@@ -13,46 +14,68 @@
     z-index: 100;
 }
 
-#wrapper>a>img{
-    display: inline-block;
-    width: 59px;
-}
-#wrapper>nav{
-    display: inline-block;
-    vertical-align: top;
-}
+    #wrapper>a>img{
+        display: inline-block;
+        width: 51px;
+        padding-right: 50px;
+    }
+    #wrapper>nav{
+        display: inline-block;
+        vertical-align: top;
+    }
 #logo{
     text-align: left;
+    padding-left: 50px;
+    position: relative
 }
-
+ #newlogo {
+        display: none;
+    }
 #menu {
     display: flex;
     flex-flow: row wrap;
     justify-content: flex-start;
-    margin-top: 6px;
+    margin-top: 4px;
 }
 
-#menu>li {
-    display: inline-block;
-    font-size: 24px;
-    border-radius: 6px;
-    margin-top: 0px;
-}
-#menu > li > a {
-    display: inline-block;
-    padding: 5px 15px;
-    color: #000;
-    text-decoration: none;
-}
 
-#menu > li:hover {
-    background-color: rgba(0,156,240, 0.7);
-    font-size: 27px;
-    -webkit-transition: background-color 0.3s ease;
-    -moz-transition: background-color 0.3s ease;
-    -o-transition: background-color 0.3s ease;
-    -ms-transition: background-color 0.3s ease;
-    transition: background-color 0.3s ease;
+    #menu>li {
+        display: inline-block;
+        font-family: "Open Sans", sans-serif;
+        font-size: 14px;
+        margin-top: 6px;
+        font-weight: bold;
+        text-transform: uppercase;
+
+    }
+        #menu > li > a {
+            display: inline-block;
+            border-radius: 4px;
+            padding: 5px 15px;
+            color: #282828;
+            /*text-shadow: 1px 1px #000;*/
+            text-decoration: none;
+        }
+
+        #menu > li>a:hover {
+            background-color: rgba(46,100,174, 1);
+            color: #ffffff;
+            text-shadow: 1px 1px #000;
+            -webkit-transition: background-color 0.3s ease;
+            -moz-transition: background-color 0.3s ease;
+            -o-transition: background-color 0.3s ease;
+            -ms-transition: background-color 0.3s ease;
+            transition: background-color 0.3s ease;
+        }
+
+
+#iframe{
+    max-width: 100%;
+    background-image: url("../resources/background.jpg");
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-position:center;
+    background-attachment:fixed;
 }
 
 #background>img{
@@ -65,7 +88,7 @@
 footer{
     width: 100%;
     position: fixed;
-    height: 40px;
+    height: 37px;
     background-color: #FFA627;
     border-top-left-radius: 7px;
     border-top-right-radius: 7px;
@@ -83,41 +106,69 @@ footer{
     display: inline-block;
 }
 
-#icons>li{
-    display: inline-block;
-}
+    #icons>li{
+        display: inline-block;
+    }
 
-#icons>li>a{
-    text-decoration: none;
-}
+        #icons>li>a{
+            text-decoration: none;
+        }
 
-#icons>li>a>img:hover{
-    opacity: 0.6;
-}
+            #icons>li>a>img:hover{
+                opacity: 0.6;
+            }
 
 #validation{
     margin-top: 12px;
     float: left;
-    margin-left: 10px;
+    margin-left: 30px;
     display: inline-block;
 }
 
-#validation>li{
-    display: inline-block;
-}
+    #validation>li{
+        display: inline-block;
+    }
 
-#validation>li>a{
-    text-decoration: none;
-}
+        #validation>li>a{
+            text-decoration: none;
+        }
+
+        #validation>li>a:hover{
+            opacity: 0.6;
+        }
 
 .Container {
     width: 100%;
-    position: relative;
+    height:910px;
+    padding-top: 45px;
+    padding-bottom: 40px;
+    border-width: 0;
 }
 
-#FirstPage>img{
-    background-position: center top;
-    background-repeat: no-repeat;
-    max-width: 100%;
-    position: static;
+/*@media only screen and (max-width: 660px) {*/
+
+/*}*/
+
+@media only screen and (max-width:760px) {
+    #wrapper>a>img {
+       display: none;
+    }
+    #menu {
+        display: flex;
+        flex-flow: column;
+
+    }
+    #newlogo {
+        display: block;
+        width: 51px;
+    }
+    #wrapper{
+    display: block;
+    text-align: center;
+    height:180px;
+    position: fixed;
+    }
+    #iframe {
+        padding-top: 70px;
+    }
 }
